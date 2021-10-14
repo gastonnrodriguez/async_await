@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", cursive;
+}
+/*Cats Facts*/
+#body {
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  justify-items: center;
+  align-items: center;
+  
+}
+nav ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+}
+#mainCats {
+  grid-area: main;
+}
+
+.container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-areas:
+    "result"
+    "button";
+  justify-items: center;
+  align-items: center;
+}
+
+.result {
+  display: grid;
+  grid-template-columns: repeat(1x fr);
+  justify-items: center;
+  align-items: center;
+  grid-gap: 20px;
+}
+
+#fact {
+  padding: 10%;
+}
+
+#send {
+  grid-area: button;
+  width: 200px;
+  height: 50px;
+  font-size: xx-large;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor:pointer;
+}
+
+
+
+
+
+#send:hover{
+transform: scale(1.1);
+}
+
+.result {
+  grid-area: result;
+}
+
+#gif{
+ border-radius: 5px;
+}
+
+footer {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+
+/*Movies*/

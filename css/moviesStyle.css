@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root{
+    --customRed: #E50914;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background: #141414;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+header {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+nav {
+  width: 25%;
+  text-align: center;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: none;
+  justify-items: center;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: x-large;
+  color: var(--customRed);
+  text-transform: uppercase;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "search"
+    "movies";
+  justify-items: center;
+  align-items: center;
+}
+
+.searchBox {
+  width: 50%;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 0.5em;
+}
+
+#query {
+  width: 50%;
+}
+#search {
+  background-color: var(--customRed);;
+  color: white;
+  text-transform: uppercase;
+  transition: transform 0.2s;
+}
+
+#search:hover {
+  transform: scale(0.9);
+}
+
+#search,
+#query {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 3px;
+  border: 1px solid red;
+}
+
+#moviesDeck {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.moviecard {
+  border-radius: 3px;
+}
+.movieCard:hover {
+  transform: translateY(-20px);
+  transition: 0.5s;
+  box-shadow: 0 8px 16px 0 rgba(255, 0, 0, 0.2),
+    0 6px 20px 0 rgba(255, 0, 0, 0.19);
+}
+
+.info {
+  text-align: justify;
+}
+
+.error{
+    color: var(--customRed);
+    font-size: 50px;
+    
+}
+
+footer {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+@media (max-width: 1040px) {
+    #moviesDeck {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 1rem;
+        justify-items: center;
+      }
+}
+

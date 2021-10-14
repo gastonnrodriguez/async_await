@@ -4,28 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/catsStyle.css" />
+    <link rel="stylesheet" href="./css/moviesStyle.css" />
     <title>ASYNC ⚡ AWAIT</title>
   </head>
-  <body id="body">
+  <body>
     <header>
       <nav>
+        <img src="" alt="" id="logo">
         <ul>
           <li><a href="./index.html"> Cats 😸</a></li>
           <li><a href="./movies.html"> Movies 🎬</a></li>
         </ul>
       </nav>
     </header>
-    <main id="mainCats">
+    <main>
       <div class="container">
-        <div class="result">
-          <img src="" alt="" id="gif" />
-          <h1 id="fact"></h1>
+        <div class="searchBox">
+          <input type="text" id="query" placeholder="e.g. batman" required>
+          <button id="search" onclick="getMovies()">Search 🍿</button>
         </div>
-        <button id="send" onclick="getMedia()">cat fact</button>
+        <div id="moviesDeck">
+
+        </div>
       </div>
-    </main>
-    <footer><a href="https://github.com/gastonnrodriguez/async_await"> 👨‍💻 @gastoncodes</a></footer>
-    <script src="./js/cats_app.js"></script>
+       </main>
+    <footer><a href="https://github.com/gastonnrodriguez/async_await">👨‍💻 @gastoncodes</a></footer>
+    <script src="./js/movies_app.js"></script>
   </body>
 </html>
