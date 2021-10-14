@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", cursive;
+}
+
+body{
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  justify-items: center;
+  align-items: center;
+}
+nav {
+    grid-area: nav;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+main{
+    grid-area: main;
+}
+
+.container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-areas:
+    "result"
+    "button";
+  justify-items: center;
+  align-items: center;
+}
+
+.result{
+    display: grid;
+    grid-template-columns: repeat(1x fr);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+#fact{
+    padding: 10%;
+}
+
+button {
+  grid-area: button;
+  width: 200px;
+  height: 50px;
+  font-size: xx-large;
+  border-radius: 5px;
+}
+
+.result {
+  grid-area: result;
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+}
